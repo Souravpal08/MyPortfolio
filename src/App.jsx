@@ -7,6 +7,7 @@ import Education from './sections/Education'
 import TechStack from './sections/TechStack'
 import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
+import {Analytics} from '@vercel/analytics/react'
 import Footer from './sections/Footer'
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <TechStack />
         <Testimonials />
         <Contact />
+        <Analytics />
         <Footer />
     </>
   )
