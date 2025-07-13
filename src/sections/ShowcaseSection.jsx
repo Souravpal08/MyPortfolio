@@ -11,10 +11,8 @@ const ShowcaseSection = () => {
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
 
- 
-
   useGSAP(() => {
-     // Animation for the main section
+    // Animation for the main section
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
@@ -22,7 +20,11 @@ const ShowcaseSection = () => {
     );
 
     // Animations for each app showcase
-    const projects = [project1Ref.current, project2Ref.current, project3Ref.current];
+    const projects = [
+      project1Ref.current,
+      project2Ref.current,
+      project3Ref.current,
+    ];
 
     projects.forEach((card, index) => {
       gsap.fromTo(
@@ -55,7 +57,17 @@ const ShowcaseSection = () => {
               <img src="/images/project3.jpg" alt="First Project" />
             </div>
             <div className="text-content">
-              <h2>Summize, an AI Powered Article Summarizer</h2>
+              <h2>
+                <a
+                  href="https://66cc15f50c815fdf61879457--fluffy-faloodeh-8d9477.netlify.app/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:underline"
+                >
+                  Summize, an AI Powered Article Summarizer
+                </a>
+              </h2>
+
               <p className="text-white-50 md:text-xl ">
                 Summize is a SAAS application that uses openAI's gpt-3.5 model
                 to summarize articles and blogs by providing the URL of it. it
@@ -69,7 +81,17 @@ const ShowcaseSection = () => {
               <div className="image-wrapper bg-[#ffefdb]">
                 <img src="/images/project1.jpg" alt="Project 2" />
               </div>
-              <h2>BuzzIQ, an online quiz platform</h2>
+              <h2>
+                <a
+                  href="https://buzz-iq.vercel.app/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:underline"
+                >
+                  BuzzIQ, an online quiz platform
+                </a>
+              </h2>
+
               <p className="text-white-50 md:text-xl">
                 BuzzIQ is an full-stack web application.
               </p>
@@ -79,7 +101,17 @@ const ShowcaseSection = () => {
               <div className="image-wrapper bg-[#ffe7eb]">
                 <img src="/images/project2.jpg" alt="Project 3" />
               </div>
-              <h2>Bookify an online Bookstore </h2>
+              <h2>
+                <a
+                  href="https://bookify-bookapp-theta.vercel.app/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:underline"
+                >
+                  BuzzIQ, an online quiz platform
+                </a>
+              </h2>
+
               <p className="text-white-50 md:text-xl">
                 Bookify is a full-stack web application made by me.
               </p>
