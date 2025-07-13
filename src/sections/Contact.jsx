@@ -31,6 +31,9 @@ const Contact = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
 
+    setIsSubmitting(true);
+    setIsSubmitted(false);
+
     setLoading(true);
 
     try {
@@ -41,12 +44,13 @@ const Contact = () => {
             import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
         )
          setFormData({ name: "", email: "", message: "" });
+         setIsSubmitted(true);
         
     } catch (error) {
         console.log("Error sending message:", error);
         
     }finally{
-       setLoading (false);
+       setIsSubmitting(false); 
     }
     
     setIsSubmitting(true);
