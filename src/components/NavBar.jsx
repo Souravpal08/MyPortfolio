@@ -41,12 +41,18 @@ const NavBar = () => {
 
         </nav>
 
-        <a href='#contact' className='contact-btn group inline-block rounded-lg px-4 py-2 font-semibold text-sm sm:text-base  transition duration-300 shadow-md'>
-        <div className="inner">
-            Let's connect
-        </div>
+       <a
+  href="/SouravPal_CV.pdf"
+  download
+  className="contact-btn group inline-block rounded-lg px-4 py-2 font-semibold text-sm sm:text-base transition duration-300 shadow-md"
+>
+  <div className="inner">
+    Download CV
+  </div>
+</a>
 
-        </a>
+
+       
     </div>
    </header>
   )
