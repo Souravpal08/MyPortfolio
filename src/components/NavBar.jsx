@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { navLinks } from '../constants'
+import { navLinks } from '../constants' 
+import {track}  from '@vercel/analytics';
 
 const NavBar = () => {
     const [scrolled, setScrolled] =  useState(false);
@@ -44,6 +45,7 @@ const NavBar = () => {
        <a
   href="/SouravPal_CV.pdf"
   download
+  onClick={() => track('Download_CV')}
   className="contact-btn group inline-block rounded-lg px-4 py-2 font-semibold text-sm sm:text-base transition duration-300 shadow-md"
 >
   <div className="inner">
